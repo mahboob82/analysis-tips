@@ -1,0 +1,13 @@
+Data Analysis From Zero
+=======================
+1.Open file
+2.File check
+3.Get files row-cols
+4.Get files unicode issues
+5.Make a summary on file
+6.Check for columns integrity
+7.Check for missing value
+8.Handling missing value,removing,replacing + printing
+9.Keep only most important columns/row/values: merging, deleting, splitting + printing
+10.Handling dates, calculating differences + printing
+
