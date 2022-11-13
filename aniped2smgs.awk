@@ -17,12 +17,8 @@
 #=======================================================================
 # Usage: 
 #   awk -v anicol=[ani] -v damcol=[dam] -f ani2smgs.awk pedfile datfile
-#   or
-#   awk -v anicol=[ani] -v damcol=[dam] ani2smgs.awk pedfile datfile
 #
 # Example:
-#   awk -v anicol=5 -v damcol=6 -f ani2smgs.awk renadd04.ped renf90.dat
-#   or
 #   awk -v anicol=5 -v damcol=6 -f ani2smgs.awk renadd04.ped renf90.dat
 #########################################################################
 
@@ -33,12 +29,12 @@ BEGIN{
    black="\033[0m"
    if(anicol<1){
 	  print "HELP:"
-      print "$ awk -v anicol=[ani] -v damcol=[dam] ani2smgs.awk pedfile datfile"; 
+      print "$ awk -v anicol=[ani] -v damcol=[dam] -f ani2smgs.awk pedfile datfile"; 
 	  print "$ awk -v anicol=" cyan "5   " black "  -v damcol=" cyan "6    " black \
 	        red " -f ani2smgs.awk " black " renadd04.ped renf90.dat"
       exit
    }
-   #updated_dat=[]
+   
 }
 
 # When internal filehandle is pedigree file
