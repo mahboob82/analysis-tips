@@ -1,4 +1,4 @@
-# This aniped2smgs.awk is a modified version of the script written by Yatuka Masuda, UNE
+# This aniped2smgs.awk is a modified version of the script written by Yatuka Masuda
 
 Here is some explanations of the script.
 First of all, there is no big difference in the original and the current codes.
