@@ -101,13 +101,13 @@ and it's DAM's sire or MGS (sire of 39559's dam). Be careful that this MGS is no
 * In pedigree file the animal id 39559 goes like :
 ```
 # animal 39559 has a sire 83945
-39559 83945 83944
+39559  |83945|  83944
 
 # sire 83945 has a sire 83947
-83945 83947 83946 1 0 2 0 744 0 020140294109
+83945  |83947|  83946   1 0 2 0 744 0 020140294109
 
-# dnd sire 83947 has a  dam 83946 whos sire is 83951
-83946 83951 83950 1 0 2 0 0 2 020135260322
+# and, finally, sire 83945 has a  dam 83946 whos sire is 83951
+83946  |83951| 83950    1 0 2 0 0 2 020135260322
 ```
 
 * So, the final pedigree file will have a pedigree like:
