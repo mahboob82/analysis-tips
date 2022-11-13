@@ -70,19 +70,19 @@ FILENAME!=ARGV[1] {
    print $0, sireid, mgsid > "renf90.smgs.dat"
 }
 
-FILENAME != ARGV[1] && FNR<10  {
+# Codes below saves 10 lines of final output data which will be printed on screen at END block
+FILENAME != ARGV[1] && FNR<=10  {
 	tmp = sprintf ("%s %s %s", $0,sireid,mgsid);
 	updated_dat[tmp]=1
 }
 
 END{
-	
+   # printing updated data head on screen	
    print " > Written updated data to 'renf90.smgs.dat' "
    print "   (check last 4 columns: aniid, damid, sireid, mgsid)" 
-   for(dat in updated_dat){
-	   print "    >", dat
-   }
-   #  loop through each sire
+   for(dat in updated_dat){ print "    >", dat  }
+   
+   # printing updated sire-mgs head on screen	
    print " >> Written sire-mgs pedigree to 'renadd.smgs.ped'" 
    print "    sire_id sire's_sire sire's_mgs"
    cnt=0
