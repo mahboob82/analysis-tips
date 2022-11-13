@@ -92,8 +92,6 @@ END{
 	sires_dam   = dam[sireid]
 	sires_mgsid = int(sire[sires_dam]) # get sire's_dam's_sire
 	print sireid,sires_sireid,sires_mgsid > "renadd.smgs.ped"
-	if (cnt <10){
-		print "    >>",sireid,sires_sireid,sires_mgsid
-	}
+	if (cnt <10){ print "    >>",sireid,sires_sireid,sires_mgsid }
    }
 }
